@@ -1,8 +1,6 @@
-@extends('auth')
+@extends('backend')
 
 @section('title', 'Welcome')
-
-@section('heading', 'TheNetwork')
 
 @section('content', 'Hey, Hi!!')
 

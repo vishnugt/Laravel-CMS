@@ -11,13 +11,19 @@
 |
 */
 
+
+Route::get('auth', 'PagesController@auth');
+Route::get('backend', 'PagesController@backend');
+
+Route::controller('auth', 'Auth\AuthController', [
+	'getLogin' => 'auth'
+	]);
+
+Route::get('backend/dashboard', ['as' => 'backend.dashboard', 'uses' => 'Backend\DashboardController@index']);
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('auth', 'PagesController@auth');
-Route::get('backend', 'PagesController@backend');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

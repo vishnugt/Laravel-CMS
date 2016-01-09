@@ -18,10 +18,22 @@
 				<li><a href="#">Item3</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><span class="navbar-text">Hello, Admin</span></li>
-				<li><span class="navbar-text"></span>Logout</li>
+				<li><a href="#">Hello, Admin</a></li>
+				<li><a href="#">Logout</a></li>
 			</ul>
 		</div>
 	</nav>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3> @yield('title') </h3>
+
+
+				@yield('content')
+			</div>
+		</div>
+	</div>
 </body>
 </html>
